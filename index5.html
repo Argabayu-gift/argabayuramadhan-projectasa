@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Operator Dalam C</title>
+</head>
+<body>
+    <label>
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
+        <div class="slide">
+            <h1>MENU</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html">Sintaksis Bahasa C</a></li>
+                <li><a href="index3.html">Output C (Cetak Teks)</a></li>
+                <li><a href="index4.html">C Komentar</a></li>
+                <li><a href="index5.html">Operator Dalam C</a></li>
+                <li><a href="index6.html">Struktur Kontrol Dalam C</a></li>
+                <li><a href="index7.html">Penutup</a></li>
+            </ul>
+        </div>
+    </label>
+    <header>
+        <h1>Pengenalan Bahasa C</h1>
+        <p>Selamat datang di tutorial C Programming sederhana.</p>
+    </header>
+
+    <main>
+        <h2>Operator dalam C</h2>
+    <p>
+        Operator dalam bahasa C digunakan untuk melakukan berbagai macam operasi, seperti operasi matematika, 
+        perbandingan nilai, operasi logika, serta operasi penugasan. Setiap jenis operator memiliki fungsi spesifik yang dapat 
+        membantu dalam pengolahan data di dalam program. Berikut adalah penjelasan lebih rinci tentang berbagai jenis operator dalam C.
+    </p>
+    <br>
+    <h3>1. Operator Aritmatika</h3>
+    <p>
+        Operator aritmatika digunakan untuk melakukan operasi matematika dasar, seperti penjumlahan, 
+        pengurangan, perkalian, pembagian, dan modulus (sisa pembagian).
+    </p>
+    <p>Kode Operator : +, -, *, /, %</p>
+    <br>
+    <p>
+        Contoh:
+        <p>
+            int a = 5, b = 3; <br>
+            int hasil = a + b;
+        </p>
+    </p>
+    <br>
+    <h3>2. Operator Relasional</h3>
+    <p>
+        Operator relasional digunakan untuk membandingkan dua nilai dan 
+        menghasilkan nilai boolean (true atau false). Operator ini sering 
+        digunakan dalam struktur kontrol seperti if, while, dan for.
+    </p>
+    <p>Kode Operator : ==, !=, <, >, <=, >=</p>
+    <p>
+        Contoh sama dengan (==):
+        <pre><code>#include &lt;stdio.h&gt;
+            int a = 5, b = 5;
+            if (a == b) {
+                printf("a dan b sama\n");
+            }
+            </code></pre>
+    </p>
+    <p>
+        Contoh tidak sama dengan (!=)
+        <pre><code>#include &lt;stdio.h&gt;
+            int a = 5, b = 10;
+            if (a != b) {
+                printf("a dan b sama\n");
+            }
+            </code></pre>
+    </p>
+    <br>
+    <h3>3. Operator Logika</h3>
+    <p>
+        Operator logika digunakan untuk melakukan operasi logika antara dua ekspresi boolean. 
+        Operator logika sering digunakan dalam pengkondisian dan perulangan.
+    </p>
+    <p>Kode Operator : && (AND), || (OR), ! (NOT).</p>
+    <p>
+        Contoh AND (&&)
+        <pre><code>#include &lt;stdio.h&gt;
+            int a = 5, b = 3;
+            if (a > 2 && b < 5) {
+                printf("Kedua ekspresi benar\n");
+            }
+            </code></pre>
+    </p>
+    <br>
+    <h3>4. Operator Penugasan</h3>
+    <p>
+        Operator penugasan digunakan untuk memberikan nilai atau melakukan operasi matematika terhadap suatu 
+        variabel. Operator ini menyederhanakan kode dan menghemat penulisan.
+    </p>
+    <p>Kode Operator : =, +=, -=, *=, /=</p>
+    <p>
+        Contoh penugasan penjumlahan (+=)
+        <pre><code>#include &lt;stdio.h&gt;
+            int a = 5;
+            a += 3;
+            </code></pre>
+    </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pengenalan Bahasa C. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

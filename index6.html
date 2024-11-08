@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Struktur Kontrol Dalam C</title>
+</head>
+<body>
+    <label>
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
+        <div class="slide">
+            <h1>MENU</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html">Sintaksis Bahasa C</a></li>
+                <li><a href="index3.html">Output C (Cetak Teks)</a></li>
+                <li><a href="index4.html">C Komentar</a></li>
+                <li><a href="index5.html">Operator Dalam C</a></li>
+                <li><a href="index6.html">Struktur Kontrol Dalam C</a></li>
+                <li><a href="index7.html">Penutup</a></li>
+            </ul>
+        </div>
+    </label>
+    <header>
+        <h1>Pengenalan Bahasa C</h1>
+        <p>Selamat datang di tutorial C Programming sederhana.</p>
+    </header>
+
+    <main>
+        <h2>Struktur Kontrol dalam C</h2>
+    <p>
+        Struktur kontrol dalam bahasa C digunakan untuk mengontrol alur eksekusi
+        program. Struktur kontrol memungkinkan programmer untuk membuat keputusan
+        (kondisional), melakukan pengulangan (loop), atau melompat ke bagian lain
+        dalam program berdasarkan kondisi tertentu. Ada tiga jenis utama struktur
+        kontrol dalam C, yaitu percabangan (conditional), perulangan (looping),
+        dan pengendalian alur lainnya (break, continue, return).
+    </p>
+    <br>
+    <h3>1. Percabangan (Conditional Statements)</h3>
+    <p>
+        Percabangan digunakan untuk mengambil keputusan berdasarkan kondisi 
+        tertentu. C memiliki beberapa jenis percabangan, di antaranya if, else, 
+        dan switch. Berikut penjelasan lengkapnya:
+    </p>
+    <br>
+    <p>- if Statements</p>
+    <p>
+        Pernyataan else digunakan sebagai alternatif ketika kondisi dalam
+        pernyataan if tidak terpenuhi (false).
+    </p>
+    <p>
+        Contoh :
+        <pre><code>#include &lt;stdio.h&gt;
+            int a = 2;
+            if (a > 3) {
+                printf("a lebih besar dari 3\n");
+            } else {
+                printf("a tidak lebih besar dari 3\n");  // Output: a tidak lebih besar dari 3
+            }
+            </code></pre>
+    </p>
+    <br>
+    <p>- else Statements</p>
+    <p>
+        Pernyataan else digunakan sebagai alternatif ketika kondisi dalam 
+        pernyataan if tidak terpenuhi (false).
+    </p>
+    <p>
+        Contoh :
+        <pre><code>#include &lt;stdio.h&gt;
+            int a = 5;
+            if (a > 3) {
+                printf("a lebih besar dari 3\n");
+            }
+            </code></pre>
+    </p>
+    <br>
+    <p>- else if Statements</p>
+    <p>
+        Pernyataan else if digunakan untuk memeriksa beberapa kondisi secara 
+        berurutan. Program akan mengevaluasi kondisi pertama, jika tidak terpenuhi, 
+        maka akan melanjutkan ke else if berikutnya.
+    </p>
+    <p>
+        Contoh :
+        <pre><code>#include &lt;stdio.h&gt;
+            int a = 5;
+            if (a > 10) {
+                printf("a lebih besar dari 10\n");
+            } else if (a > 3) {
+                printf("a lebih besar dari 3 tetapi tidak lebih besar dari 10\n");
+            } else {
+                printf("a tidak lebih besar dari 3\n");
+            }
+            </code></pre>
+    </p>
+    <br>
+    <p>- switch Statements</p>
+    <p>
+        Pernyataan switch digunakan untuk memeriksa nilai variabel terhadap 
+        berbagai kemungkinan nilai dalam sejumlah case. switch adalah alternatif 
+        dari penggunaan banyak pernyataan if-else if ketika ada banyak kondisi 
+        yang saling eksklusif.
+    </p>
+    <p>
+        Contoh :
+        <pre><code>#include &lt;stdio.h&gt;
+            int hari = 2;
+            switch (hari) {
+                case 1:
+                    printf("Senin\n");
+                    break;
+                case 2:
+                    printf("Selasa\n");  // Output: Selasa
+                    break;
+                case 3:
+                    printf("Rabu\n");
+                    break;
+                default:
+                    printf("Hari tidak valid\n");
+            }
+            </code></pre>
+    </p>
+    <br>
+    <h3>2. Perulangan (Looping Statements)</h3>
+    <p>
+        Perulangan digunakan untuk mengeksekusi blok kode beberapa kali, 
+        sesuai dengan kondisi tertentu. C menyediakan tiga jenis perulangan 
+        utama, yaitu for, while, dan do-while.
+    </p>
+    <p>- for Loop</p>
+    Struktur for digunakan ketika jumlah perulangan sudah diketahui sebelumnya.
+    <p>
+        Contoh :
+        <pre><code>#include &lt;stdio.h&gt;
+            for (int i = 0; i < 5; i++) {
+                printf("%d ", i);  // Output: 0 1 2 3 4
+            }
+            </code></pre>
+    </p>
+    <br>
+    <p>- while Loop</p>
+    <p>
+        while loop digunakan ketika kita ingin melakukan perulangan 
+        selama kondisi tertentu bernilai true.
+    </p>
+    <p>
+        Contoh :
+        <pre><code>#include &lt;stdio.h&gt;
+            int i = 0;
+            while (i < 5) {
+                printf("%d ", i);  // Output: 0 1 2 3 4
+                i++;
+            }
+            </code></pre>
+    </p>
+    <br>
+    <p>- do-while Loop</p>
+    <p>
+        Perbedaan utama antara do-while dan while adalah bahwa pada do-while, 
+        kondisi dicek setelah blok kode dijalankan, sehingga blok kode akan 
+        dieksekusi setidaknya satu kali.
+    </p>
+    <p>
+        Contoh :
+        <pre><code>#include &lt;stdio.h&gt;
+            int i = 0;
+            do {
+                printf("%d ", i);  // Output: 0 1 2 3 4
+                i++;
+            } while (i < 5);
+            </code></pre>
+    </p>
+    <br>
+    <h3>3. Pengendalian Alur Program Lainnya</h3>
+    <p>
+        Selain struktur kontrol utama, C juga menyediakan beberapa pernyataan 
+        yang dapat digunakan untuk mengontrol alur eksekusi program dalam 
+        perulangan atau fungsi.
+    </p>
+    <p>- break Statements</p>
+    <p>
+        Pernyataan break digunakan untuk keluar dari perulangan atau switch 
+        statement secara langsung, meskipun kondisi perulangan atau switch 
+        belum berakhir.
+    </p>
+    <p>
+        Contoh :
+        <pre><code>#include &lt;stdio.h&gt;
+            for (int i = 0; i < 10; i++) {
+                if (i == 5) {
+                    break;  // Keluar dari loop jika i = 5
+                }
+                printf("%d ", i);  // Output: 0 1 2 3 4
+            }            
+            </code></pre>
+    </p>
+    <br>
+    <p>- continue Statements</p>
+    <p>
+        Pernyataan continue digunakan untuk melewati iterasi yang sedang berjalan 
+        dan langsung melanjutkan ke iterasi berikutnya dalam perulangan.
+    </p>
+    <p>
+        Contoh :
+        <pre><code>#include &lt;stdio.h&gt;
+            for (int i = 0; i < 5; i++) {
+                if (i == 2) {
+                    continue;  // Lewati i = 2
+                }
+                printf("%d ", i);  // Output: 0 1 3 4
+            }
+            </code></pre>
+    </p>
+    <br>
+    <p>- return Statements</p>
+    <p>
+        Pernyataan return digunakan untuk mengembalikan nilai dari fungsi dan 
+        keluar dari fungsi tersebut. Pada fungsi yang tidak mengembalikan nilai 
+        (void), return hanya digunakan untuk keluar dari fungsi.
+    </p>
+    <p>
+        Contoh :
+        <pre><code>#include &lt;stdio.h&gt;
+            int tambah(int a, int b) {
+                return a + b;
+            }
+            int hasil = tambah(3, 4);  // hasil = 7
+            </code></pre>
+    </p>
+    <br>
+    <h3>4. Nested Statements (Pernyataan Bersarang)</h3>
+    <p>
+        Dalam C, kita juga bisa menggunakan struktur kontrol di dalam struktur 
+        kontrol lainnya. Ini dikenal sebagai pernyataan bersarang 
+        (nested statements).
+    </p>
+    <p>
+        Contoh :
+        <pre><code>#include &lt;stdio.h&gt;
+            int a = 5, b = 3;
+            if (a > b) {
+                if (a == 5) {
+                    printf("a adalah 5\n");
+                } else {
+                    printf("a lebih besar dari b, tetapi bukan 5\n");
+                }
+            }
+            </code></pre>
+    </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pengenalan Bahasa C. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
